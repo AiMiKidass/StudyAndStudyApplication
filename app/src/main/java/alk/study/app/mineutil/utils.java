@@ -283,7 +283,6 @@ public final class Utils {
 		try {
 			handler.postDelayed(progressRunnable, 1500);
 		} catch (Exception e) {
-			LekanLog.d("error:" + e.getMessage());
 		}
 	}
 
@@ -360,7 +359,6 @@ public final class Utils {
 	/**
 	 * 获取未安装的APK信息
 	 * 
-	 * @param mContext
 	 * @param archiveFilePath
 	 *            APK文件的路径�?如：/sdcard/download/XX.apk
 	 * @return
@@ -387,43 +385,6 @@ public final class Utils {
 		}
 		lastClickTime = time;
 		return false;
-	}
-
-
-	// 跳转到播放页面
-	public static void leaveTo(int key, int languageStyle, long movieid,
-			int movietype, long movieidx, long timeLeft, String movieaudio, String userid,
-			String uuid, int currentType, String lasturl, Activity activity) {
-	    goToPlayer(activity, key, languageStyle, movieid, movietype, movieidx, timeLeft, false, movieaudio, userid, uuid, currentType, lasturl);
-//		if (!Utils.checkWifiConnection(activity)) {// not wifi
-//			Toast.makeText(activity, "为了节省你的3G流量，请在wlan环境下播放", 1).show();
-//		}
-//		switch (key) {
-//		case 1:
-//			Bundle bundle = new Bundle();
-//
-//			bundle.putString("backurl", lasturl);
-//
-//			bundle.putInt("languageStyle", languageStyle);
-//			bundle.putString("movieId", movieid + "");
-//			bundle.putString("movieType", movietype + "");
-//			bundle.putString("movieIdx", movieidx + "");
-//			bundle.putString("movieAudio", movieaudio);
-//			bundle.putString("userId", userid);
-//			bundle.putString("uuid", uuid);
-//			bundle.putInt("type", currentType);// 跳转到播放页面，标识自己是动画
-//			bundle.putString("backact", "main");
-//
-//			Intent intent = new Intent();
-//			intent.putExtras(bundle);
-//			intent.setClass(activity, LekanPlayerActivity.class);
-//			activity.startActivity(intent);
-//
-//			break;
-//
-//		default:
-//			break;
-//		}
 	}
 
 	/**

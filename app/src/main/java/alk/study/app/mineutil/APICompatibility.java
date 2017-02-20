@@ -41,26 +41,6 @@ public final class APICompatibility {
         }
     }
 
-    public static Drawable getThumbDrawable(SeekBar seekbar) {
-        Drawable thumb = null;
-        if(seekbar != null) {
-            if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN)
-                seekbar.getThumb();
-            else {
-                try {
-                    Class cls = seekbar.getClass();
-                    Object obj = cls.getConstructor(null).newInstance(null);
-                    Field thumbField = cls.getDeclaredField("mThumb");
-                    thumbField.setAccessible(true);
-                    thumb = (Drawable)thumbField.get(seekbar);
-                } catch(Exception e) {
-                    Log.e("APICompatibility", "get reflection field error:"+e);
-                }
-            }
-        }
-        return thumb;
-    }
-
     public static void getRealMetrics(Display display, DisplayMetrics dm) {
         if(display != null && dm != null) {
             if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {

@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">StudyAndStudyApplication</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_mcpdemo">MCPActivityDemo</string>
+    <string name="title_activity_mvc">MVCActivity</string>
+    <string name="title_activity_newmvc">NewMvcActivity</string>
 </resources>
