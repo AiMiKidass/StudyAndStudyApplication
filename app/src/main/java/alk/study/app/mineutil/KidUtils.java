@@ -14,6 +14,7 @@ import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
@@ -27,6 +28,7 @@ public class KidUtils {
 		return strDate;
 	}
 
+	@SuppressLint("HardwareIds")
 	public static String getMacAddress(Context context) {
         WifiManager wifiManager = (WifiManager) context.getSystemService(Context.WIFI_SERVICE);
         WifiInfo wifiinfo = wifiManager.getConnectionInfo();
@@ -113,7 +115,6 @@ public class KidUtils {
 
 	/**
 	 * 获得MAC地址
-	 * @param type 0:wifi 1:ethernet
 	 * @return
 	 */
 	public static String getMacAddressByCmdLine() {

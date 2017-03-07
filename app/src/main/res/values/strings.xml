@@ -4,4 +4,7 @@
     <string name="title_activity_mcpdemo">MCPActivityDemo</string>
     <string name="title_activity_mvc">MVCActivity</string>
     <string name="title_activity_newmvc">NewMvcActivity</string>
+    <string name="title_activity_google_demo_mvp">GoogleDemoMVPActivity</string>
+    <string name="title_activity_okhttp_demo">OKHttpDemoActivity</string>
+    <string name="title_activity_rx_java_demo">RxJavaDemoActivity</string>
 </resources>

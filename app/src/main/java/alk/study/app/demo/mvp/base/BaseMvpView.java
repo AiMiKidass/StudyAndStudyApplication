@@ -1,4 +1,4 @@
-package alk.study.app.demo.base;
+package alk.study.app.demo.mvp.base;
 
 /**
  * Created by Aleak on 2017/2/19.

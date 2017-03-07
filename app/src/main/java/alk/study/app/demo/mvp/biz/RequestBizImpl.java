@@ -1,4 +1,4 @@
-package alk.study.app.demo.biz;
+package alk.study.app.demo.mvp.biz;
 
 import android.os.SystemClock;
 

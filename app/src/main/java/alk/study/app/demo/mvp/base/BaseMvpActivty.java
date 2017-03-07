@@ -1,4 +1,4 @@
-package alk.study.app.demo.base;
+package alk.study.app.demo.mvp.base;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

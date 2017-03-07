@@ -35,6 +35,7 @@ import java.sql.Date;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Enumeration;
+import java.util.Locale;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.regex.Matcher;
@@ -161,7 +162,7 @@ public final class Utils {
     
     public static String getCurrentDateStringFormat() {
         long current = System.currentTimeMillis();
-        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd", Locale.US);
         Date date = new Date(current);
         String dateFormat = format.format(date);
         return dateFormat;

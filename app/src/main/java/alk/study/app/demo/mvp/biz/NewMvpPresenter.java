@@ -1,11 +1,11 @@
-package alk.study.app.demo.biz;
+package alk.study.app.demo.mvp.biz;
 
 import android.os.Handler;
 import android.os.Looper;
 
 import java.util.ArrayList;
 
-import alk.study.app.demo.base.BasePresenter;
+import alk.study.app.demo.mvp.base.BasePresenter;
 
 /**
  * Created by Aleak on 2017/2/19.

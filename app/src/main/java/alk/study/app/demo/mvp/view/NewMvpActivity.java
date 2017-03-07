@@ -1,4 +1,4 @@
-package alk.study.app.demo;
+package alk.study.app.demo.mvp.view;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -14,9 +14,9 @@ import android.widget.Toast;
 import java.util.List;
 
 import alk.study.app.R;
-import alk.study.app.demo.base.BaseMvpActivty;
-import alk.study.app.demo.biz.NewMvpPresenter;
-import alk.study.app.demo.biz.NewMvpView;
+import alk.study.app.demo.mvp.base.BaseMvpActivty;
+import alk.study.app.demo.mvp.biz.NewMvpPresenter;
+import alk.study.app.demo.mvp.biz.NewMvpView;
 
 /**
  * MVP Demp

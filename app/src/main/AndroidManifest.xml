@@ -3,6 +3,7 @@
           package="alk.study.app">
 
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -16,18 +17,33 @@
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
-            android:name=".demo.MVPActivityDemo"
+            android:name=".demo.mvp.view.MVPActivityDemo"
             android:label="@string/title_activity_mcpdemo"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
-            android:name=".demo.MVCActivity"
+            android:name=".demo.mvp.view.MVCActivity"
             android:label="@string/title_activity_mvc"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
-            android:name=".demo.NewMvpActivity"
+            android:name=".demo.mvp.view.NewMvpActivity"
             android:label="@string/title_activity_newmvc"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".demo.mvp.view.GoogleDemoMVPActivity"
+            android:label="@string/title_activity_google_demo_mvp"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".demo.okhttp.OKHttpDemoActivity"
+            android:label="@string/title_activity_okhttp_demo"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".demo.rxjava.RxJavaDemoActivity"
+            android:label="@string/title_activity_rx_java_demo"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

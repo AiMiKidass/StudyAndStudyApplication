@@ -1,4 +1,4 @@
-package alk.study.app.demo;
+package alk.study.app.demo.mvp.view;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -17,9 +17,8 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 import alk.study.app.R;
-import alk.study.app.demo.biz.OnRequestListener;
-import alk.study.app.demo.biz.RequestBiz;
-import alk.study.app.demo.biz.RequestBizImpl;
+import alk.study.app.demo.mvp.biz.OnRequestListener;
+import alk.study.app.demo.mvp.biz.RequestBizImpl;
 
 /**
  * 用于区别MVP模式

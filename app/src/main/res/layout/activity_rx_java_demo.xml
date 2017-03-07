@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<android.support.design.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="alk.study.app.demo.mvp.view.MVCActivity">
+    tools:context="alk.study.app.demo.rxjava.RxJavaDemoActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_mvc"/>
+    <include layout="@layout/content_rx_java_demo"/>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
@@ -32,16 +32,4 @@
         android:layout_margin="@dimen/fab_margin"
         app:srcCompat="@android:drawable/ic_dialog_email"/>
 
-    <ListView
-    android:id="@+id/lv_main_container"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"/>
-
-    <ProgressBar
-        android:id="@+id/pb_loadingbar"
-        android:layout_width="45dip"
-        android:layout_centerInParent="true"
-        android:layout_gravity="center"
-        android:layout_height="45dip"/>
-
-</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

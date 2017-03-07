@@ -1,8 +1,8 @@
-package alk.study.app.demo.biz;
+package alk.study.app.demo.mvp.biz;
 
 import java.util.List;
 
-import alk.study.app.demo.base.BaseMvpView;
+import alk.study.app.demo.mvp.base.BaseMvpView;
 
 /**
  * Created by Aleak on 2017/2/19.

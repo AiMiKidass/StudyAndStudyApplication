@@ -1,11 +1,11 @@
-package alk.study.app.demo.base;
+package alk.study.app.demo.mvp.base;
 
 
 /**
  * 基础Presenter
  * 解决一些共用问题
  */
-public abstract class BasePresenter<T> {
+public abstract class BasePresenter<T extends BaseMvpView> {
 
     public T mMvpView;
 
